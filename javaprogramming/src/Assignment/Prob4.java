@@ -10,27 +10,28 @@ import java.util.Scanner;
 
 public class Prob4 {
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the delay days :");
-		int days=sc.nextInt();
+		int days = sc.nextInt();
 		delay(days);
-		
+		sc.close();
+
 	}
+
 	public static void delay(int days) {
-		if(days<=5) {
-			System.out.println("Fine : 50 paise");
-			return;
-		}if(days>5 && days<=10) {
-			System.out.println("Fine : 1 rupee");
-			return;
-		}if(days>10) {
-				System.out.println("Fine : 5 rupees");
-			}
-		if(days>30) {
-			System.out.println("You memebership is cancelled bruhhh");
+		if (days >= 1 && days <= 5) {
+			System.out.println("Fine : "+0.5*days);
+		} else if (days > 5 && days <= 10) {
+			System.out.println("Fine : "+1*days);
+
+		} else if (days > 10 && days < 30) {
+			System.out.println("Fine : "+5*days);
+		} else if (days > 30) {
+			System.out.println("Your memebership is cancelled bruhhh");
+		} else {
+			System.out.println("NO Fine");
 		}
-			
-		
+
 	}
 
 }
