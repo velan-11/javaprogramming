@@ -21,7 +21,7 @@ public class Prob9 {
 
 	public static void percentage(double p, double c, double b, double m, double co) {
 		double percent = ((p + c + b + m + co) / 5) ;
-		System.out.println("Percentage"+percent);+
+		System.out.println("Percentage"+percent);
 		if (percent >= 90 && percent <100) {
 			System.out.println("Grade A");
 		} else if (percent >= 80 && percent < 90) {
