@@ -3,16 +3,19 @@ package Assignment;
 import java.util.Scanner;
 
 //to get date day month from user and return the day.(own assignment)
+//there are some errors in the program
 public class Prob18 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the date:");
 		int date=sc.nextInt();
-		System.out.println("Enter the year:");
-		int year=sc.nextInt();
 		sc.nextLine();
 		System.out.println("Enter the month:");
 		String month=sc.nextLine();
+		System.out.println("Enter the year:");
+		int year=sc.nextInt();
+		
+		
 		
 		week_of_day(date,month,year);
 		sc.close();
@@ -51,7 +54,19 @@ public class Prob18 {
 		case "December":d=5;break;
 			
 		}
-		System.out.println("The week of the day is:"+(a+b+c+d+date)/7);
+		int w=((a+b+c+d+date)/7)+1;
+		switch(w) {
+		case 0:System.out.println("Sunday");break;
+		case 1:System.out.println("Monday");break;
+		case 2:System.out.println("Tuesday");break;
+		case 3:System.out.println("Wednesday");break;
+		case 4:System.out.println("Thursday");break;
+		case 5:System.out.println("Friday");break;
+		case 6:System.out.println("Saturday");break;
+		default:System.out.println("bye bye bye");
+		}
+		
+		
 		
 	}
 }
