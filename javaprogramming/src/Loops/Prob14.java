@@ -1,9 +1,20 @@
 package Loops;
 
+import java.util.Scanner;
+
 public class Prob14 {
 public static void main(String[] args) {
-	while(true) {
-		System.out.println("vijay");
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter a  num:");
+	int a=sc.nextInt();
+	digits(a);
+}
+public static void digits(int a) {
+	int count=0;
+	while(a!=0) {
+		count++;
+		a=a/10;
 	}
+	System.out.println(count);
 }
 }
