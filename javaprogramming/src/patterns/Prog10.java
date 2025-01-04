@@ -8,9 +8,12 @@ import java.util.Scanner;
 
 public class Prog10{
 	public static void main(String[] args) {
-//		Scanner sc=new Scanner(System.in);
-//		System.out.println("enter a num:");
-//		int n=sc.nextInt();
+/// 	01 02 03 04 05 
+//		06 07 08 09 10 
+//		11 12 13 14 15 
+//		16 17 18 19 20 
+//		21 22 23 24 25 
+
 		int a=1;
 		for (int row = 1; row <= 5; row++) {
 			for (int col = 1; col <= 5; col++) {
