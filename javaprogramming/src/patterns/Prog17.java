@@ -1,5 +1,7 @@
 package patterns;
-
+//*   *
+//** **
+//*****
 import java.util.Scanner;
 
 public class Prog17 {
@@ -10,9 +12,9 @@ public class Prog17 {
 		triangle(n);
 	}
 	public static void triangle(int n) {
-		for(int row=1;row<=2*n-1;row++) {
+		for(int row=1;row<=n;row++) {
 			for(int col=1;col<=2*n-1;col++) {
-				if(row>=col && row+col>=n+1 )
+				if(row>=col || row+col>=2*n )
 				System.out.print("*");
 				else
 					System.out.print(" ");

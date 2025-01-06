@@ -1,10 +1,14 @@
 package patterns;
-//  *  
-// *** 
 //*****
+//** **
+//*   *
+//** **
+//*****
+
+
 import java.util.Scanner;
 
-public class Prog15 {
+public class Prog21 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter the number:");
@@ -12,9 +16,9 @@ public class Prog15 {
 		triangle(n);
 	}
 	public static void triangle(int n) {
-		for(int row=1;row<=n;row++) {
+		for(int row=1;row<=2*n-1;row++) {
 			for(int col=1;col<=2*n-1;col++) {
-				if(row+col>=n+1 && col-row<=n-1)
+				if(row+col<=n+1  || col-row>=n-1 || row-col>=n-1 || row+col>=2*n+2)
 				System.out.print("*");
 				else
 					System.out.print(" ");
