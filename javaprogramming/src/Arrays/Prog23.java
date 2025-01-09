@@ -16,7 +16,7 @@ public static void main(String[] args) {
 		a[i]=sc.nextInt();
 	}
 	System.out.print("enter the array2 elements:");
-	int b[]=new int[size1];
+	int b[]=new int[size2];
 	for(int i=0;i<b.length;i++) {
 		b[i]=sc.nextInt();
 	}
@@ -26,11 +26,14 @@ public static void main(String[] args) {
 }
 public static void merge(int a[],int b[],int size1,int size2) {
 	int c[]=new int[size1+size2];
-	for(int i=0;i<c.length;i++) {
+	for(int i=0;i<a.length;i++) {
 		c[i]=a[i];
-}System.out.print("New array values: ");
-	for(int i=0;i<b.length;i++) {
-		System.out.print(b[i]+" ");
+	}for(int i=a.length,j=0;i<c.length;i++) {
+		c[i]=b[j++];
+	}
+System.out.print("Merged array values: ");
+	for(int i=0;i<c.length;i++) {
+		System.out.print(c[i]+" ");
 		}
 	}
 }
