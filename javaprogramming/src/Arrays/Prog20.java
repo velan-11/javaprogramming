@@ -1,8 +1,9 @@
 package Arrays;
-//to find the maximum and minimum value in an array
+
 import java.util.Scanner;
 
-public class Prog6 {
+//to find the difference between maximum and minimum value in the array
+public class Prog20 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		System.out.print("enter the length of array:");
@@ -12,28 +13,29 @@ public class Prog6 {
 		for(int i=0;i<a.length;i++) {
 			a[i]=sc.nextInt();
 		}
-		maximum(a);
-		minimum(a);
+		int x=maximum(a);
+		int y=minimum(a);
+		System.out.println("The difference b/w maximum and minimum value in the array is "+ (x-y));
 
 	}
-public static void maximum(int a[]) {
+public static int maximum(int a[]) {
 		int x=a[0];
 		for(int i=0;i<a.length;i++){
 			if(a[i]>x) {
 				x=a[i];
 			}
 				}
-		System.out.println("The maximum value is "+x);
+		return x;
 	
 }
-public static void minimum(int a[]) {
+public static int minimum(int a[]) {
 	int x=a[0];
 	for(int i=0;i<a.length;i++){
 		if(a[i]<x) {
 			x=a[i];
 		}
 			}
-	System.out.println("The minimum value is "+x);
+	return x;
 
 }
 

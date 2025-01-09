@@ -1,29 +1,34 @@
 package Arrays;
-//to find the minimum value in an array
+
 import java.util.Scanner;
 
-public class Prog7 {
+//to find maximum value in the first half of the array
+public class Prog8 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		System.out.print("enter the length of array:");
+		System.out.print("enter the size of the array: ");
 		int size=sc.nextInt();
 		System.out.print("enter the array elements:");
 		int a[]=new int[size];
 		for(int i=0;i<a.length;i++) {
 			a[i]=sc.nextInt();
 		}
+		System.out.println(maximum_first(a));
 		
-		minimum(a);
-
+		
 	}
-public static void minimum(int a[]) {
+	public static int maximum_first(int a[]) {
 		int x=a[0];
-		for(int i=0;i<a.length;i++){
+		for(int i=0;i<a.length/2;i++) {
 			if(a[i]<x) {
 				x=a[i];
 			}
-				}
-		System.out.println("The minimum value is "+x);
+			
+		}
+		
+		
+		return x;
+	}
 	
 }
-}
+	
