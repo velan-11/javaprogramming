@@ -1,8 +1,8 @@
 package Arrays;
 
 import java.util.Scanner;
-//to reverse an array
-public class Prog22 {
+//to reverse the second half of an array 
+public class Prog27 {
 public static void main(String[] args) {
 	Scanner sc=new Scanner(System.in);
 	System.out.print("enter the size of the array: ");
@@ -12,18 +12,18 @@ public static void main(String[] args) {
 	for(int i=0;i<a.length;i++) {
 		a[i]=sc.nextInt();
 	}
-	System.out.print("Before swapping:");
+	System.out.print("Before reversing:");
 	print(a);
 	reverse(a);
 	
-	System.out.print("\nAfter swapping:");
+	System.out.print("\nAfter reversing:");
 	print(a);
 	
 	
 	
 }
 public static void reverse(int a[]) {
-	for(int i=a.length-1, j=0;i>j;i--,j++) {
+	for(int i=a.length-1, j=a.length/2;i>j;i--,j++) {
 			
 				int temp=a[i];
 				a[i]=a[j];
