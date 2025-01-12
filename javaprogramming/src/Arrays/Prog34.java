@@ -1,8 +1,8 @@
-package Sorting_algorithms;
+package Arrays;
 
 import java.util.Scanner;
-
-public class Bubble_ {
+// to find all the missing elements between the maximum and minimum value in the array
+public class Prog34 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("enter the size of the array: ");
@@ -12,15 +12,10 @@ public class Bubble_ {
 		for (int i = 0; i < a.length; i++) {
 			a[i] = sc.nextInt();
 		}
-		sc.close();
-		System.out.print("Before swapping:");
-		print(a);
-		bubble_sort(a);
-		System.out.print("\nAfter swapping");
-		print(a);
+		missing(a);
 	}
 
-	public static void bubble_sort(int a[]) {
+	public static void missing(int a[]) {
 		for(int i=0;i<a.length-1;i++) {//pass
 			for(int j=0;j<a.length-1-i;j++) {
 				if(a[j]>a[j+1]) {//swap
@@ -29,10 +24,21 @@ public class Bubble_ {
 					a[j+1]=temp;
 		}
 				}	
-	}	
+	}System.out.print("The missing elements are: ");
+		int maximum=a[a.length-1];
+		int minimum=a[0];
+		for(int i=minimum;i<maximum;i++) {
+			boolean present=false;
+			for(int j=0;j<a.length-1;j++) {
+				if(i==a[j]) {
+					present=true;
+					break;
+				}
+					
+			}
+			if(!present) {
+				System.out.print(i+" ");
+			}
+		}
 }
-	public static void print(int a[]) {
-		for(int i:a) {
-			System.out.print(i+" ");
 }
-	}}
