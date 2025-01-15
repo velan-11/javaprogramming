@@ -1,5 +1,5 @@
 package Loops;
-//to find whether the number is a perfect number
+//to find whether the number is a perfect square
 import java.util.Scanner;
 
 public class Prog16 {

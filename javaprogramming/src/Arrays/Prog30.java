@@ -18,14 +18,27 @@ public class Prog30 {
 		
 	}
 	public static void duplicate(int a[]) {
-		System.out.print("The duplicate elements in the array are ");
+		
+		int max=0;
 		for(int i=0;i<a.length;i++) {
-			for(int j=0;j<a.length;j) {
-				if(a[i]==a[j]) {
-					System.out.print(a[i]+" ");
-					break;
-				}
+			if(a[i]>max) {
+				max=a[i];
 			}
+
 		}
-	}
+		boolean[] b=new boolean[max+1];
+		
+		for(int i=0;i<max;i++) {
+			b[i]=false;
+		}
+		System.out.print("The duplicate elements are: ");
+		for(int i=0;i<a.length;i++) {
+			if(b[a[i]]) {
+				System.out.print(a[i]+" ");
+			}else {
+				b[a[i]]=true;
+			}
+			
+}
+}
 }

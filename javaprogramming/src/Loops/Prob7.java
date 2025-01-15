@@ -1,5 +1,5 @@
 package Loops;
-// to reverse a number
+// to find the product of digits of a given number.
 
 import java.util.Scanner;
 

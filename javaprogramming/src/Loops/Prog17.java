@@ -1,5 +1,7 @@
 package Loops;
-//to find whether the number is a armstrong number
+//to find whether the number is a armstrong number.
+/*An Armstrong number (also known as a Narcissistic number or Pluperfect number) is a number that is equal to the sum of its own digits,
+each raised to the power of the number of digits in the number.*/
 import java.util.Scanner;
 
 public class Prog17 {

@@ -1,5 +1,6 @@
 package Loops;
-// to reverse a number
+// to check whether the given number is a spy number or not.
+//A spy number is a number in which the sum of its digits equals the product of its digits.
 
 import java.util.Scanner;
 
@@ -8,9 +9,7 @@ public class Prob8 {
 		Scanner sc=new Scanner(System.in);	
 		System.out.print("enter a num: ");
 		int a=sc.nextInt();
-		int b=product(a);
-		int c=sum(a);
-		if(b==c) {
+		if(product(a)==sum(a)) {
 			System.out.println("It is a spy number");
 		}else {
 			System.out.println("It is not a spy number");

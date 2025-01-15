@@ -1,6 +1,6 @@
 package Loops;
 //to find if the given number is a perfect number
-
+//here the perfect number refers to sum of its divisors except the number itself(6=1+2+3)
 import java.util.Scanner;
 
 public class Prog20 {

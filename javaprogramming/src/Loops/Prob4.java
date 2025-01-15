@@ -1,5 +1,5 @@
 package Loops;
-//reverse of a number
+//reverse of a number without storing in a variable
 public class Prob4 {
 	public static void main(String[] args) {
 		int num=3492;

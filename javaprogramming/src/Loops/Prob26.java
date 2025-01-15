@@ -3,6 +3,9 @@ package Loops;
 import java.util.Scanner;
 
 // to check whether the given number is neon number
+
+/*A neon number is a number whose sum of digits of  square of the number is equal to the
+original number (9^2=81 8+1=9) */
 public class Prob26 {
 public static void main(String[] args) {
 	Scanner sc=new Scanner(System.in);

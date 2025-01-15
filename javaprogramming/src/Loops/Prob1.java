@@ -4,8 +4,8 @@ public class Prob1 {
 	public static void main(String[] args) {
 		char c=65;
 		while(c<=90) {
-			System.out.println(c);
-			c++;
+			System.out.print(c+++" ");
+
 		}
 	}
 

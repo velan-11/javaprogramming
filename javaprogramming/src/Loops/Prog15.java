@@ -1,5 +1,6 @@
 package Loops;
 //to find whether the number is a perfect number
+//25(5*5) is a perfect number and 28 is not
 import java.util.Scanner;
 
 public class Prog15 {
@@ -15,6 +16,9 @@ public static void perfect(int a) {
 	while(i*i<a) {
 		i++;
 	}
-	System.out.println(i+" is the perfect square of "+a);
+	if(i*i==a) {
+		System.out.println(i+" is a perfect square of the perfect number "+a);
+	}else
+		System.out.println("It is not a perfect number");
 }
 }

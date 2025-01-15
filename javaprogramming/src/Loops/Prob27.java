@@ -1,6 +1,10 @@
 package Loops;
 
 import java.util.Scanner;
+//to check whether the given number is a sunny number or not.
+//A number n is a sunny number if n+1 is a perfect square.
+//example of perfect square is 25 =5*5
+
 
 public class Prob27 {
 	public static void main(String[] args) {

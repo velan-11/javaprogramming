@@ -1,5 +1,6 @@
 package Loops;
-// to reverse a number
+// to check whether the given number is a palindrome or not
+//A number is called palindrome when the original number is equal to the reversed original number.
 
 import java.util.Scanner;
 

@@ -1,5 +1,6 @@
 package Loops;
 //to reverse a number for given test case: like---> 4321=2143
+//this can be also done by concatenating
 import java.util.Scanner;
 
 public class Prog19 {
@@ -11,34 +12,23 @@ public class Prog19 {
 
 	}
 
-	public static void reverse(int a) {
-		int count = 0;
-		int temp = a;
-		while (a != 0) {
-			count++;
-			a = a / 10;
-		}
-		count(count,temp);
-	}
-
-	public static int power(int a, int b) {
-		int product = 1;
-		while (b != 0) {
-			product = product * a;
-			b--;
-
-		}
-		return product;
-
-	}
-	public static void count(int count,int temp) {
-		count = count / 2;
-		String reversed = "";
-		int c = power(10, count);
-		int d=temp%c;
-		reversed=reversed+d;
-		int e=temp/c;
-		reversed=reversed+e;
-		System.out.println(reversed);
-	}
+	public static void reverse(int n){
+        int count=0;
+        int temp=n;
+        while(temp!=0){
+            count++;
+            temp/=10;
+        }
+        count=count/2;
+        int prd=1;
+        while(count>0){
+            prd=prd*10;
+            count--;
+        }
+        int first=n/prd;
+        int last=n%prd;
+//      String reversed=last+""+first;
+        int reversed=last*prd+first;
+        System.out.println(reversed);
+    }
 }

@@ -1,7 +1,7 @@
 package Loops;
 
 import java.util.Scanner;
-
+//To find the count of digits in a number
 public class Prob14 {
 public static void main(String[] args) {
 	Scanner sc=new Scanner(System.in);

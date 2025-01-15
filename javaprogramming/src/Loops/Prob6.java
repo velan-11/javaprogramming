@@ -1,5 +1,5 @@
 package Loops;
-// to reverse a number
+// to find the sum of digits of a given number
 
 import java.util.Scanner;
 
@@ -16,8 +16,8 @@ public class Prob6 {
 		int sum=0;
 		while(num!=0) {
 			int digit=num%10;
-			num=num/10;
 			sum+=digit;
+			num=num/10;
 			
 		}
 		return sum;

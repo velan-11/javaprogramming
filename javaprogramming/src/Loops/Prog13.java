@@ -1,5 +1,5 @@
 package Loops;
-
+//to convert the decimal value to binary value.
 import java.util.Scanner;
 
 public class Prog13 {

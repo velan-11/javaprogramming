@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Prog18 {
 public static void main(String[] args) {
 	Scanner sc=new Scanner(System.in);
-	System.out.println("enter a number:");
+	System.out.println("enter the range :");
 	int a=sc.nextInt();
 	int sum=0;
 	int i=0;
