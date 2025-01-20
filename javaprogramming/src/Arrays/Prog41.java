@@ -28,6 +28,10 @@ public static void second_maximum(int a[]) {
 			max=a[i];
 	}
 	}
+	if(max==max2) {
+		System.out.println("There is no second maximum");
+		return;
+	}
 	System.out.println("The second maximum value in the array is "+max2);
 
 }
