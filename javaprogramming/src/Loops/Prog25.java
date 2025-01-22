@@ -25,6 +25,7 @@ public static void largest_prime(int a,int b) {
 		if(count==2) {
 			System.out.println(i);
 			break;
+			
 		}
 		
 	}

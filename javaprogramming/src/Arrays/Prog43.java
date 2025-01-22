@@ -1,9 +1,9 @@
 package Arrays;
-//
+
 import java.util.Scanner;
 
-//To print only the duplicate elements in the array
-public class Prog30 {
+//to print the duplicate elements in the array
+public class Prog43 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		System.out.print("enter the size of the array: ");
@@ -13,32 +13,26 @@ public class Prog30 {
 		for(int i=0;i<a.length;i++) {
 			a[i]=sc.nextInt();
 		}
+		
 		duplicate(a);
 		
 		
 	}
 	public static void duplicate(int a[]) {
-		
-		int max=0;
 		for(int i=0;i<a.length;i++) {
-			if(a[i]>max) {
-				max=a[i];
+			int count=1;//practically the element will be present once in the array.
+			for(int j=i+1;j<a.length;j++) {//we are using i+1 because we dont need to count the same element again.
+				if(a[i]==a[j]) {
+					a[j]=Integer.MAX_VALUE;
+					count++;
+				}
+				
 			}
-
-		}
-		boolean[] b=new boolean[max+1];
-		
-		for(int i=0;i<max;i++) {
-			b[i]=false;
-		}
-		System.out.print("The duplicate elements are: ");
-		for(int i=0;i<a.length;i++) {
-			if(b[a[i]]) {
-				System.out.print(a[i]+" ");
-			}else {
-				b[a[i]]=true;
+			if(a[i]!=Integer.MAX_VALUE && count>1) {
+				System.out.println(a[i]);
 			}
-			
+		}
+	
+	}
 }
-}
-}
+	

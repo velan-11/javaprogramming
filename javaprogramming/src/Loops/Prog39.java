@@ -33,8 +33,8 @@ public static void xylem(int a) {
 		temp1=temp1/10;
 		
 	}
-	int mid_mean=sum-(first_no+last_no);
-	if(first_no+last_no==mid_mean) {
+	int inner_sum=sum-(first_no+last_no);
+	if(first_no+last_no==inner_sum) {
 		System.out.println("It is a Xylem number");
 	}else {
 		System.out.println("It is a pholem number");

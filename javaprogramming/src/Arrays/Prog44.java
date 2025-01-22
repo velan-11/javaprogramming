@@ -2,8 +2,8 @@ package Arrays;
 
 import java.util.Scanner;
 
-//to find the frequency of every elements in the array
-public class Prog18 {
+//to print the all elements in the array only once
+public class Prog44 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		System.out.print("enter the size of the array: ");
@@ -14,11 +14,11 @@ public class Prog18 {
 			a[i]=sc.nextInt();
 		}
 		
-		frequency(a);
+		print_onlyOnce(a);
 		
 		
 	}
-	public static void frequency(int a[]) {
+	public static void print_onlyOnce(int a[]) {
 		for(int i=0;i<a.length;i++) {
 			int count=1;//practically the element will be present once in the array.
 			for(int j=i+1;j<a.length;j++) {//we are using i+1 because we dont need to count the same element again.
@@ -28,8 +28,8 @@ public class Prog18 {
 				}
 				
 			}
-			if(a[i]!=Integer.MAX_VALUE) {
-				System.out.println(a[i]+" : "+count);
+			if(a[i]!=Integer.MAX_VALUE && count>=1) {
+				System.out.println(a[i]);
 			}
 		}
 	
