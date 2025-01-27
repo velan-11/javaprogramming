@@ -2,6 +2,7 @@ package Arrays;
 
 import java.util.Scanner;
 // to find all the missing elements between the maximum and minimum value in the array
+//this is not correct program.the array will not always be sorted;
 public class Prog34 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
