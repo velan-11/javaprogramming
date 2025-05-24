@@ -22,10 +22,11 @@ public class Prog11 {
 		}
 			System.out.println();
 	}
-		transpose(a);
+		//transpose(a);
+		transpose1(a,row,col);
 		
 	}
-	public static void transpose(int a[][]) {
+	public static void transpose(int a[][]) {//by directly printing it
 		System.out.println("transpose of the matrix:");
 		for(int i=0;i<a.length;i++) {
 			for(int j=0;j<a[i].length;j++) {
@@ -35,4 +36,21 @@ public class Prog11 {
 	}
 
 }
+	public static void transpose1(int a[][],int row,int col) {//by storing it in another matrix
+		int b[][]=new int[row][col];
+		for(int i=0;i<a.length;i++) {
+			for(int j=0;j<a[i].length;j++) {
+				b[j][i]=a[i][j];
+			}
+			}
+		System.out.println("transpose of the matrix:");
+		for(int i=0;i<b.length;i++) {
+			for(int j=0;j<b[i].length;j++) {
+				System.out.print(b[i][j]+" ");
+		}
+			System.out.println();
+	}
+		
+	}
+
 }

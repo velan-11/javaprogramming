@@ -2,6 +2,7 @@ package Arrays;
 
 import java.util.Scanner;
 //to reverse only the even index of an array 
+//this is wrong check again
 public class Prog29 {
 public static void main(String[] args) {
 	Scanner sc=new Scanner(System.in);

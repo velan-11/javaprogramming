@@ -1,5 +1,5 @@
 package Loops;
-//To check whether the given number is happy number or not
+//To check whether the given number is happy number or not+
 
 /*A happy number is a number defined by the following process:
 Start with any positive integer.

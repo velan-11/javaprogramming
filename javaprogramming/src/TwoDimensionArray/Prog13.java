@@ -25,12 +25,20 @@ public class Prog13 {
 	}
 	public static int[][] transpose(int a[][],int row,int col) {
 		int[][] b=new int[col][row];//transpose means changing of rows and columns(if its sqr matrix no need)
-		for(int i=0;i<b.length;i++) {
-			for(int j=0;j<b[j].length;j++) {
+		for(int i=0;i<a.length;i++) {
+			for(int j=0;j<a[i].length;j++) {
+				b[j][i]=a[i][j];
+				
+			}
+		}
+		/*for(int i=0;i<b.length;i++) {
+			for(int j=0;j<b[i].length;j++) {
 				b[i][j]=a[j][i];
 				
 			}
 		}
+		 * 
+		 */
 		return b;
 		
 	}

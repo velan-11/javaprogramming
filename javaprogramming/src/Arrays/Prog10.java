@@ -4,7 +4,7 @@ import java.util.Scanner;
 //to get input from the user and print it
 public class Prog10 {
 	public static void main(String[] args) {
-		Scanner vasee=new Scanner(System.in);
+		Scanner vasee=new Scanner(System.in);//it is not a proper identifier
 		System.out.println("enter the size of array:");
 		int size=vasee.nextInt();
 		System.out.println("enter the array elements");

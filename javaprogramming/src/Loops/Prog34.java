@@ -30,7 +30,7 @@ public class Prog34 {
 		if (sum1 == sum2) {
 			System.out.println("It is an anagram");
 
-		}else {
+		} else {
 			System.out.println("It is not an anagram");
 		}
 

@@ -15,7 +15,6 @@ public static void main(String[] args) {
 	
 }
 public static void neon(int a) {
-	int temp=a;
 	int product=a*a;
 	int sum=0;
 	while(product!=0) {
@@ -23,7 +22,7 @@ public static void neon(int a) {
 		sum+=digit;
 		product/=10;
 	}
-	if(temp==sum) {
+	if(a==sum) {
 		System.out.println("It is a neon number");
 	}else {
 		System.out.println("It is not a neon number");

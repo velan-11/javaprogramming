@@ -26,6 +26,6 @@ public class Prog17 {
 			sum += a[i];
 
 		}
-		return sum / (a.length-a.length/2);
+		return sum / (a.length-(a.length/2));
 	}
 }
