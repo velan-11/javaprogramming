@@ -5,7 +5,7 @@ package patterns;
 // * * 
 //  *  
 
-//if hollow means use OR logic or use AND
+//if hollow means use OR logic or use AND 
 
 
 

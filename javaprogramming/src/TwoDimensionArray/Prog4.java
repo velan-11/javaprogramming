@@ -3,6 +3,7 @@ package TwoDimensionArray;
 public class Prog4 {
 	public static void main(String[] args) {
 		int[] a[]= {{1,2,3},{2,4,9},{3,2,1}};
+		System.out.println(a[2][1]);
 		elements(a);
 	}
 	public static void elements(int [][]a) {

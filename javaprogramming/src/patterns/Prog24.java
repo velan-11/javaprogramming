@@ -1,5 +1,5 @@
 package patterns;
-//A   
+//A    
 //12  
 //BCD 
 //3456

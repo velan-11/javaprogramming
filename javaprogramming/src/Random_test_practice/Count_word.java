@@ -6,6 +6,6 @@ public class Count_word {
 		for(String a:s.split("-")) {
 			System.out.println(a);
 		}
-		System.out.println(s.substring(0,2));
+		
 	}
 }
